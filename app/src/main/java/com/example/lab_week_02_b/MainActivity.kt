@@ -19,6 +19,7 @@ class MainActivity : AppCompatActivity() {
     private val submitButton: Button
         get() = findViewById(R.id.submit_button)
 
+
     private val startForResult =
         registerForActivityResult(ActivityResultContracts.StartActivityForResult()) { activityResult ->
             val data = activityResult.data
@@ -61,5 +62,6 @@ class MainActivity : AppCompatActivity() {
                     .show()
             }
         }
+
     }
 }
